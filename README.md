@@ -34,19 +34,3 @@ A modern, responsive showcase page for Nike shoes featuring interactive UI eleme
 | `≥ 800px`      | Desktop layout with side-by-side sections  |
 
 ---
-## Project structture
-index.html
-├── head/
-│   ├── Meta tags
-│   ├── Google Fonts (Syncopate, Poppins)
-│   ├── CSS/JS dependencies (Bootstrap, Icons)
-├── body/
-│   ├── Responsive Navigation Bar
-│   ├── Main Content
-│   │   ├── Product Info Section
-│   │   └── Product Display Carousel
-│   └── Fixed Social Media Sidebar
-└── scripts/
-    ├── Carousel JS
-    └── Event Listeners
-
