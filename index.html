@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Nike</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="img-1/favicon.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css" integrity="sha512-hH7VMMVfPgfkpYx2GazOEG6RrYM+y8cS7FzccwBTWQeyhPv01XYk0MVcuhh4EAimOELWvqKjhNwes/UsYoyN6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    *
+    {
+        font-family: "Syncopate", serif;
+    }
+    @media(min-width:300px)
+    {
+        .box
+        {
+            height: 300px !important;
+            width: 300px !important;
+        }
+        .imgcon
+        {
+            top:150px;
+        }
+        .icns
+        {
+            right: 20px;
+            z-index: 2;
+        }
+        main
+        {
+            overflow: scroll;
+        }
+    }
+    @media(min-width:800px)
+    {
+        .box
+        {
+            height: 480px !important;
+            width: 480px !important;
+        }
+        .imgcon
+        {
+            top:0px !important;
+        }
+        .icns
+        {
+            right: -30px;
+            z-index: 2;
+        }
+        main
+        {
+            overflow: hidden !important;
+        }
+    }
+    #ic
+    {
+        transition: all 0.5s;
+    }
+    #ic:hover
+    {
+        transform: translateY(-12px) scale(1.2);
+        cursor: pointer;
+
+        color: cyan !important;
+    }
+    .imgcon
+    {
+        animation: comer 1s;
+    }
+    .car-btn
+    {
+        padding-block: 5px;
+        padding-inline: 20px;
+        border-radius: 40px;
+        background: transparent;
+        border: 1px solid rgba(161, 154, 154, 0.715);
+        transition: all 0.5s;
+    }
+    .one
+    {
+        background-color: cyan;
+    }
+    .hide
+    {
+        display: none !important;
+    }
+    .show
+    {
+        display: block !important;
+    }
+    .animel
+    {
+        animation: slidel 1.3s;
+    }
+    .animer
+    {
+        animation: slider 1.3s;
+    }
+    .btns
+    {
+        top:290px;
+        position: relative;
+    }
+    @keyframes slider {
+        from
+        {
+            transform: translateY(400px) translateX(200px) scale(0.2);
+            opacity: 0.5;
+        }
+        to
+        {
+            transform: translate(0) translateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+    @keyframes slidel {
+        from
+        {
+            transform: translate(0);
+        }
+        to
+        {
+            transform: translateY(400px) translateX(-200px) scale(0.2);
+            opacity: 0.5;
+        }
+    }
+    #con
+    {
+        animation: comel 1s;
+    }
+
+    @keyframes comer {
+        from
+        {
+            transform: translateX(400px);
+            opacity: 0;
+        }
+        to
+        {
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+    @keyframes comel {
+        from
+        {
+            transform: translateX(-400px);
+            opacity: 0;
+        }
+        to
+        {
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+    body
+    {
+        background-color: #f1eaea;
+    }
+</style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <nav class="navbar navbar-expand-sm fixed-top nav-underline">
+                    <div class=" container" >
+                        <a href="#" class=" navbar-brand">
+                            <img class=" img-fluid" src="img-1/logo.svg">
+                        </a>
+                        <div id="nav" class="offcanvas offcanvas-end bg-transparent" data-bs-scroll="true" style="backdrop-filter: blur(7px);" >
+                            <div class=" offcanvas-header justify-content-end">
+                                <button class=" btn me-3 mt-3" data-bs-dismiss="offcanvas" style="border: 1px solid white !important;">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div> 
+                            <div class=" offcanvas-body navbar-nav justify-content-md-end gap-5 align-items-center" >
+                                <a class=" nav-link text-black">Men</a>
+                                <a class=" nav-link text-black">Woman</a>
+                                <a class=" nav-link text-black">Popular</a>
+                                <a class=" nav-link text-black ">Trend</a>
+                            </div>    
+                        </div>
+                        <button class="btn navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav" style="border: 1px solid white;">
+                            <span class=" navbar-toggler-icon text-light"></span>
+                        </button>
+                        
+                    </div>
+                </nav>
+            </nav>
+        </header>
+        <main style="min-height: 100vh;background-color:#f1eaea;"class="d-flex justify-content-center align-items-center position-relative" >
+            <div class="container position-relative" style="height: 100%;">
+                <div class="row d-flex align-items-center justify-content-center position-relative">
+                    <div class="col-md-6 col-12 d-flex flex-column align-items-md-start align-items-center position-relative" id="con">
+                        <p class="fs-1 fw-bold">NIKE</p>
+                        <p class="display-1 text-black fw-bold ">LUPINEK<br>FLYKNIT<br>ACG</p>
+                        <p style="font-family: 'Poppins', serif;width:85%" class="fs-5">Designed to Withstand the rigorus of adverse conditions,the Nike ACC Flyknit Lupinek Combines Flyknit,Flywire and a water-resistant Defender Repellant System in the Upper</p>
+                        <button class="btn btn-light fw-bold fs-4 rounded-5 px-5 py-2">BUY NOw</button>
+                    </div>
+                    <div class="col-md-6 col-10 d-flex justify-content-center align-items-center mt-4 mt-md-0 flex-column position-relative imgcon" >
+                        <img src="img-1/shoe-1.png" class=" img img-fluid imgone position-absolute" style="z-index: 1;">
+                        <img src="img-1/shoe-2.png" class=" img img-fluid d-none imgtwo position-absolute" style="z-index: 1;">
+                        <img src="img-1/shoe-3.png" class=" img img-fluid d-none imgthree position-absolute" style="z-index: 1;">
+                        <div class="box position-absolute" style="height: 70%;width:35%;background-color:white;border-radius:50%"></div>
+                        <div class="btns">
+                            <button class="car-btn one"> </button>
+                            <button class="car-btn two"> </button>
+                            <button class="car-btn three"> </button>
+                        </div>
+                    </div>
+                    <div class="col-1 position-fixed icns">
+                        <div class="icons pb-5 d-flex flex-column">
+                            <i class="ri-facebook-fill  text-dark justify-content-center  mt-4 p-2 " style="font-size: 22px;"id="ic"></i>
+                            <i class="ri-youtube-fill   text-dark justify-content-center  mt-4 p-2"  style="font-size: 22px;"id="ic"></i>
+                            <i class="ri-instagram-fill  text-dark justify-content-center  mt-4 p-2"  style="font-size: 22px" id="ic"></i>
+                            <i class="ri-twitter-fill  text-dark justify-content-center  mt-4 p-2" style="font-size: 22px;" id="ic"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+       
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            let one=document.querySelector(".one")
+            let two=document.querySelector(".two")
+            let three=document.querySelector(".three")
+            let btns=document.querySelectorAll(".car-btn")
+            let count=0
+            let i1=document.querySelector(".imgone")
+           let i2=document.querySelector(".imgtwo")
+           let i3=document.querySelector(".imgthree")
+            two.addEventListener("click",()=>
+            {
+                btns.forEach((btn)=>
+                {
+                    btn.style.backgroundColor="transparent"
+                })
+                two.style.backgroundColor="cyan"
+                i1.classList.remove("animer")
+                i1.classList.add("animel")
+                i3.classList.remove("animer")
+                i3.classList.add("animel")
+                setTimeout(()=>{
+                    count++;
+                    if(count>=0)
+                    {
+                        i1.classList.remove("show")
+                        i1.classList.add("hide")
+                        i3.classList.remove("show")
+                        i3.classList.add("hide")
+                    }
+                },1000)
+                i2.classList.remove("hide")
+                i2.classList.add("show")
+                i2.classList.add("animer")
+            })
+            three.addEventListener("click",()=>
+            {
+                btns.forEach((btn)=>
+                {
+                    btn.style.backgroundColor="transparent"
+                })
+                three.style.backgroundColor="cyan"
+                i1.classList.remove("animer")
+                i2.classList.remove("animer")
+                i2.classList.add("animel")
+                i1.classList.add("animel")
+                setTimeout(()=>{
+                    count++;
+                    if(count>=0)
+                    {
+                        i1.classList.remove("show")
+                        i1.classList.add("hide")
+                        i2.classList.remove("show")
+                        i2.classList.add("hide")
+                    }
+                },1000)
+                i3.classList.remove("hide")
+                i3.classList.add("show")
+                i3.classList.add("animer")
+            })
+            one.addEventListener("click",()=>
+            {
+                btns.forEach((btn)=>
+                {
+                    btn.style.backgroundColor="transparent"
+                })
+                one.style.backgroundColor="cyan"
+                i3.classList.remove("animer")
+                i3.classList.add("animel")
+                i2.classList.remove("animer")
+                i2.classList.add("animel")
+                setTimeout(()=>{
+                    count++;
+                    if(count>=0)
+                    {
+                        i2.classList.remove("show")
+                        i2.classList.add("hide")
+                        i3.classList.remove("show")
+                        i3.classList.add("hide")
+                    }
+                },1000)
+                i1.classList.remove("hide")
+                i1.classList.add("show")
+                i1.classList.add("animer")
+            })
+        </script>
+    </body>
+</html>
